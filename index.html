@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados na tela</title>
+</head>
+<body>
+    <hi>Informe seus Dados:</hi>
+    <br>
+    <div>
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome">
+        </div>
+        <br>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco">
+        </div>
+        <br>
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro">
+        </div>
+        <br>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade">
+        </div>
+        <br>
+        <div>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado">
+        </div>
+        <br>
+        <div>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep">
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone">
+        </div>
+        <br>
+        <div>
+            <input type="button" onclick="displayNome()" value= "Gravar">
+        </div>
+    </div>
+    <div>
+        <h3 id='nomeImpresso'></h3>
+        <h4 id='nomeImpresso2'></h4>
+        <h4 id='nomeImpresso3'></h4>
+        <h4 id='nomeImpresso4'></h4>
+        <h4 id='nomeImpresso5'></h4>
+        <h4 id='nomeImpresso6'></h4>
+        <h4 id='nomeImpresso7'></h4>
+    </div>
+</body>
+</html>
+<script>
+    function displayNome(){
+        var nome = document.getElementById('nome');
+        var nomeImpresso = document.getElementById('nomeImpresso');
+        nomeImpresso.innerHTML = nome.value;
+        alert(nome.value);
+
+        var endereco = document.getElementById('endereco');
+        var nomeImpresso2 = document.getElementById('nomeImpresso2');
+        nomeImpresso2.innerHTML = endereco.value;
+
+        var bairro = document.getElementById('bairro');
+        var nomeImpresso3 = document.getElementById('nomeImpresso3');
+        nomeImpresso3.innerHTML = bairro.value;
+
+        var cidade = document.getElementById('cidade');
+        var nomeImpresso4 = document.getElementById('nomeImpresso4');
+        nomeImpresso4.innerHTML = cidade.value;
+
+        var estado = document.getElementById('estado');
+        var nomeImpresso5 = document.getElementById('nomeImpresso5');
+        nomeImpresso5.innerHTML = estado.value;        
+
+        var cep = document.getElementById('cep');
+        var nomeImpresso6 = document.getElementById('nomeImpresso6');
+        nomeImpresso6.innerHTML = cep.value;
+
+        var telefone = document.getElementById('telefone');
+        var nomeImpresso7 = document.getElementById('nomeImpresso7');
+        nomeImpresso7.innerHTML = telefone.value;
+
+    }
+</script>
